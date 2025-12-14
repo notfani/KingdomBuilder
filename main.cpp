@@ -794,6 +794,10 @@ public:
             std::cout << "Ваше королевство достигло процветания!" << std::endl;
             std::cout << "Год: " << current_year << ", Население: " << resources.res["население"] 
                         << ", Золото: " << resources.res["золото"] << std::endl;
+
+            std::cout << "Введите ENTER для выхода...";
+            std::cin.ignore();
+
         } else if (isGameOver()) {
             std::cout << "\n" << std::endl;
             std::cout << "╔════════════════════════════════════╗" << std::endl;
@@ -804,6 +808,8 @@ public:
             } else if (resources.res["население"] <= 0) {
                 std::cout << "Население вымерло. Королевство опустело." << std::endl;
             }
+            std::cout << "Введите ENTER для выхода...";
+            std::cin.ignore();
         }
     }
 };
