@@ -341,7 +341,7 @@ private:
 
     void initBuildings(){
         // имя, стоимость, производство, потребление
-        available_buildings.push_back(Building("Ферма", {{"\u0434ерево", 20}, {"камень", 10}}, {{"еда", 20}}, {}));
+        available_buildings.push_back(Building("Ферма", {{"дерево", 20}, {"камень", 10}}, {{"еда", 20}}, {}));
         available_buildings.push_back(Building("Лесопилка", {{"дерево", 15}, {"золото", 5}}, {{"дерево", 15}}, {}));
         available_buildings.push_back(Building("Золотой рудник", {{"дерево", 25}, {"камень", 15}}, {{"золото", 12}}, {}));
         available_buildings.push_back(Building("Каменоломня", {{"дерево", 15}, {"золото", 10}}, {{"камень", 18}}, {}));
